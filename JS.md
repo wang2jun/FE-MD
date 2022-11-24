@@ -491,7 +491,7 @@ code 属性值是函数代码，以字符串的形式存储。当执行到一个
 
 ### 在浏览器检测内存泄漏
 
-[去看掘金连接](https://juejin.cn/post/6984188410659340324)
+[掘金连接](https://juejin.cn/post/6984188410659340324)
 
 开发者工具 Memory 选项  录制多个快照
 
@@ -589,9 +589,7 @@ images.forEach(image => {
 
 defer：要等到 DOM 树生成，其他 JS 脚本执行完，才会执行。
 
-async：下载完就会执行。执行实际不确定，不确定在 DOMContentLoaded 的前或后，但一定在onload 前。
-
-![](C:\Users\wangjun\Desktop\fe-md\MD\defer+async.jpg)
+async：下载完就会执行
 
 
 

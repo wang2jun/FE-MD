@@ -348,7 +348,7 @@ class Tiger extends Animal {
         // 子类构造函数在使用 this 之前必须调用 super
         // 先生成一个继承父类的对象，再将该对象作为子类的实例
         super() //  Animal.call(this);
-        console.log(super.flag) // super 指向父类的原型
+        console.log(super.b) // super 指向父类的原型
     }
     static getFlag() {
         return super.flag  //静态方法中的super指向的是父类
