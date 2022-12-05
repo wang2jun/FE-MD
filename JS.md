@@ -269,19 +269,20 @@ const currying = (fn, arr = []) => {
 特点：订阅和发布没有明显的关联， 靠中介（数组）来做事
 
 ```js
-let e = { 
-    arr: [],
-    on(fn) {
-        this.arr.push(fn); // 将函数依次存储到数组中
-    },
-    emit() {
-        this.arr.forEach(fn => fn());
-    }
+class Event {
+  constructor() {
+    this.arr = [];
+  }
+  on(fn) {
+    this.arr.push(fn);
+  }
+  emit() {
+    this.arr.forEach((fn) => fn());
+  }
 }
-e.on(function () {
-    console.log('一个函数')
-})
-e.emit()
+let e = new Event();
+e.on(() => console.log("on"));
+e.emit();
 ```
 
 # 观察者模式
