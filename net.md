@@ -1211,7 +1211,7 @@ WebSocket 是一种基于 TCP 的网络通信协议，在地位上是**与 HTTP 
 
 ### 握手
 
-利用了 HTTP 本身的协议升级特性，伪装成 HTTP，绕过浏览器沙盒、网络防火墙等等限制，这也是 WebSocket 与 HTTP 的另一个重要关联点。
+利用了 HTTP 本身的协议升级特性，伪装成 HTTP，绕过网络防火墙等等限制，这也是 WebSocket 与 HTTP 的另一个重要关联点。
 
 WebSocket 的握手是 HTTP GET 请求，但要带上两个协议升级的专用头字段：
 
